@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE discografica>
+
+    <discografica>
+        <grupos>
+            <grupo nombre="Metallica" estilo="Trash Metal">
+                <componentes numero="4">
+                    <persona nom_apell="James Hetfield" rol="Cantante/Guitarra"></persona>
+                    <persona nom_apell="Lars Ulrich" rol="Bateria"></persona>
+                    <persona nom_apell="Robert Trujillo" rol="Bajo"></persona>
+                    <persona nom_apell="Kirk Hammet" rol="Guitarra"></persona>
+                </componentes>
+                <albumes numero="4">
+                    <album nombre="Kill`Em All" anio="1983"></album>
+                    <album nombre="Ride the Lightning" anio="1984"></album>
+                    <album nombre="Master of puppets" anio="1986"></album>
+                    <album nombre="Metallica" anio="1991"></album>
+                </albumes>
+            </grupo>
+            <grupo nombre="Pearl Jam" estilo="Rock and roll">
+                <componentes numero="6">
+                    <persona nom_apell="Eddie Vedder" rol="Cantante"></persona>
+                    <persona nom_apell="Mike McCready" rol="Guitarra"></persona>
+                    <persona nom_apell="Stone Gossard" rol="Guitarra"></persona>
+                    <persona nom_apell="Jeff Ament" rol="Bajo"></persona>
+                    <persona nom_apell="Matt Cameron" rol="Bateria"></persona>
+                    <persona nom_apell="Kenneth Gaspar" rol="Teclado"></persona>
+                </componentes>
+                <albumes numero="3">
+                    <album nombre="Ten" anio="1991"></album>
+                    <album nombre="Vs" anio="1993"></album>
+                    <album nombre="Vitalogy" anio="1994"></album>
+                </albumes>
+            </grupo>
+        </grupos>
+    </discografica>

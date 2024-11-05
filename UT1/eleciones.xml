@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE eleciones>
+
+    <eleciones>
+        <informacion>
+            <fecha_elec>02/03/2022</fecha_elec>
+            <numero_cole>1</numero_cole>
+            <posi_votan>32</posi_votan>
+        </informacion>
+
+        <colegio>
+            <nom_cole>IES ALISAL</nom_cole>
+            <num_mesas>3</num_mesas>
+            <votantes_mesa>21</votantes_mesa>
+                <mesas>
+                    <mesa1 id="1">
+                        <num_mesa>1</num_mesa>
+                            <personas>
+                                <titular>ANA</titular>
+                             <vocales>
+                                 <vocal1>MARIA</vocal1>
+                                 <vocal2>CHRIS</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa1>
+                    <mesa2 id="2">
+                        <num_mesa>2</num_mesa>
+                            <personas>
+                                <titular>ABA</titular>
+                             <vocales>
+                                 <vocal1>ROBIN</vocal1>
+                                 <vocal2>NATALIA</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa2>
+                    <mesa3 id="3">
+                        <num_mesa>3</num_mesa>
+                            <personas>
+                                <titular>SERGIO</titular>
+                             <vocales>
+                                 <vocal1>UNAI</vocal1>
+                                 <vocal2>ANDREA</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa3>
+                    <mesa4 id="4">
+                        <num_mesa>4</num_mesa>
+                            <personas>
+                                <titular>JAVI</titular>
+                             <vocales>
+                                 <vocal1>UNAI</vocal1>
+                                 <vocal2>DANI</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa4>
+                </mesas>
+        </colegio>
+
+        <colegio>
+            <nom_cole>IES RAMIRO</nom_cole>
+            <num_mesas>3</num_mesas>
+            <votantes_mesa>21</votantes_mesa>
+                <mesas>
+                    <mesa1 id="1">
+                        <num_mesa>1</num_mesa>
+                            <personas>
+                                <titular>ANA</titular>
+                             <vocales>
+                                 <vocal1>MARIA</vocal1>
+                                 <vocal2>CHRIS</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa1>
+                    <mesa2 id="2">
+                        <num_mesa>2</num_mesa>
+                            <personas>
+                                <titular>ABA</titular>
+                             <vocales>
+                                 <vocal1>ROBIN</vocal1>
+                                 <vocal2>NATALIA</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa2>
+                    <mesa3 id="3">
+                        <num_mesa>3</num_mesa>
+                            <personas>
+                                <titular>SERGIO</titular>
+                             <vocales>
+                                 <vocal1>UNAI</vocal1>
+                                 <vocal2>ANDREA</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa3>
+                    <mesa4 id="4">
+                        <num_mesa>4</num_mesa>
+                            <personas>
+                                <titular>JAVI</titular>
+                             <vocales>
+                                 <vocal1>UNAI</vocal1>
+                                 <vocal2>DANI</vocal2>
+                             </vocales>
+                         </personas>
+                    </mesa4>
+                </mesas>
+        </colegio>
+
+
+    </eleciones>

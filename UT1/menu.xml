@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE menu>
+
+    <platos> <!--En cada plato he puesto todo como atributo menos la descripción ya que esta es mas larga-->
+        <plato id="001" nombre="Copa helado" categoria="Postre" Precio="5€">
+            <descripcion>Un conjunto de tres bolas de helado, de los sabores que tu quieras decoradas por chispas de chocolate
+                        y caramelo para disfrutar en grupo o tu solo
+            </descripcion>
+        </plato>
+        <plato id="002" nombre="Bistec" categoria="Carne" Precio="12€">
+            <descripcion>Un trozo de carne de un kilo y medio serviod con patatas y pimientos</descripcion>
+        </plato>
+        <plato id="003" nombre="Sopa de Marisco" categoria="Sopas" Precio="8€">
+            <descripcion>Un caldo cocinado por 5 horas en el cual hay almejas, langostinos,alcaparras y gambones</descripcion>
+        </plato>
+    </platos>

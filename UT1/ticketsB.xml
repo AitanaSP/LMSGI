@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ticket>
+
+    <tickets>
+        <ticket>
+            <empresa nombre="C.C.CARREFOUR S.A">
+                <cif>A2845270</cif>
+                <tienda nombre="E.S.CARREFOUR EL PINAR">
+                <contacto telefono="916310758" email="xxxxxxxx@gmail.com"></contacto>
+                <n.iri cod="28/121464"></n.iri>
+                </tienda>
+            </empresa>
+            <compra fecha="15.01.13" hora="16:13">
+                <factura id="8986987" n.tpv="102"></factura>
+                <objetos>
+                    <objeto nombre="10 EURO-SUPER" cantidad="39,12" pvpunit="1,649" IVA="21%" descuento="0%"></objeto>
+                    <objeto nombre="chicle fresa" cantidad="1" pvpunit="1€" IVA="21%" descuento="0%"></objeto>
+                </objetos>
+            </compra>
+            <pago base="54,314€" cuota="11,406€" total="65,72€"></pago>
+        </ticket>
+    </tickets>

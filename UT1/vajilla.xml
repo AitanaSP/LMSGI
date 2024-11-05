@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE vajilla>
+    <vajilla>
+        <platos><!--He puesto todos los datos como atributo ya que son datos cortos y relevantes-->
+            <plato modelo="Porcelana" tipo="Sopero" diametro="30 CM" stock="7"></plato>
+            <plato modelo="Frances" tipo="Postre" diametro="15 CM" stock="9"></plato>
+        </platos>
+        <cristaleria>
+            <vaso modelo="Swaroski" tipo="Copa Coctel" capacidad="1500 ML" stock="32"></vaso>
+            <vaso modelo="Rupert" tipo="Vaso largo" capacidad="400 ML" stock="7"></vaso>
+        </cristaleria>
+        <cubiertos>
+            <cubierto modelo="Ruso" tipo="Tenedor" stock="34"></cubierto>
+            <cubierto modelo="Bethany" tipo="Cucharita" stock="15"></cubierto>
+        </cubiertos>
+    </vajilla>
