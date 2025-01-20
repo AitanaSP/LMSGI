@@ -1,0 +1,179 @@
+.bodyindex{
+        width: 100%;
+        height: 100%;
+        --s: 140px; /* control the size */
+      
+        --_g: #0000 52%, #170409 /* first color */ 54% 57%, #0000 59%;
+        background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0
+            calc(var(--s) / 2),
+          radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s) / 2)
+            0,
+          radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
+          radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #67917a; /* second color */
+        background-size: calc(var(--s) / 4.667) var(--s),
+          var(--s) calc(var(--s) / 4.667);
+      }
+      
+.bodysobremi{
+    background-color: #67917a;
+}
+
+.bodyportfolio{
+    background-color: #67917a;
+}
+.archivador {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+   /* width: 95%;
+    max-width: 1200px;*/
+    width: auto;
+    max-width: 100%;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-principal {
+    display: flex; /* Mantener los botones en fila horizontal */
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-top: 20px;
+    padding: 0px 0;
+    border-bottom: 0px solid white;
+    margin-bottom: 0px;
+
+}
+
+.menu-principal label {
+    position: relative;
+    text-align: center;
+    background-color: #67917a;
+    padding: 15px 10px;
+    margin-right: 0px; /* Espacio entre los botones */
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    color: #005bb5;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.menu-principal label:hover {
+    background-color: sandybrown;
+}
+
+input[type="radio"] {
+    display: none; /* Ocultar los botones de radio */
+}
+
+input[type="radio"]:checked + label {
+    background-color:#67917a;
+    font-weight: bold;
+    border-bottom: 3px solid #67917a;
+}
+
+
+
+.nav {
+    display: none;
+    padding: 10px;
+    background-color: #e6f4ff;
+    border: 1px solid #67917a;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0px; /* Añadir espacio entre el botón y el contenido */
+    margin-bottom: 0px;
+}
+
+input[type="radio"]:checked + label + .nav {
+    display: block; /* Mostrar el contenido cuando se selecciona el radio button */
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    height: auto;
+  }
+.contcarpeta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+   /* height: 2000px;*/
+   /* width: 1500px;*/
+}
+
+.nom_introduccion{
+    float: right;
+}
+.fotocurriculum{
+
+    width: 270px;
+    height: 400px;
+
+    
+}
+
+.textocurriculum{
+
+    background-color: white;
+    border-radius: 20px;
+    border: 20px;
+    color: #67917a;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+}
+
+/*CARROUSEL*/
+
+.contenedor {
+
+    display: flex;
+    gap: 20px; /* Espaciado entre imágenes */
+  }
+  
+  .item {
+    position: relative; /* Necesario para posicionar el texto */
+    text-align: center;
+  }
+  
+  .item img {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Efecto de zoom al pasar el ratón */
+  }
+  
+  .item img:hover {
+    transform: scale(1.1); /* Zoom */
+  }
+  
+  /* Texto debajo de la imagen */
+  .texto {
+    position: absolute;
+    bottom: -25px; /* Aparece justo debajo de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave */
+    pointer-events: none; /* Evita interferencias con el mouse */
+  }
+  
+  .item:hover .texto {
+    opacity: 1; /* Aparece al pasar el ratón */
+  }

@@ -1,0 +1,16 @@
+body {font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label { color: grey;}
+
+header { background-color: #333;
+    h1 { color: white;
+
+    }
+   
+    
+}
+.img-kirby { object-fit: cover;
+
+}
+

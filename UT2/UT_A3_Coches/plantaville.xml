@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plantas>
+
+<!--Examen/actividad evaluable: Aitana Sierra Peña -->
+
+<!--Lo primero seria definir una etiqueta "plantas" para que no de error a la hora de meter varias plantas a la vez-->
+<plantas>
+<!-- Aqui defini el namespace de planta edificio con p y tambien pongo el edificio en el que esta como atributo-->
+    <p:planta xmlns:p="./plantaville.xml" edificio="1">
+        <p:sala>
+        <!-- Aqui defini otro namespace pero esta vez siendo a para definir que me refiero a plantas, tambien 
+        para la informacion decidi poner todo como atributos a excepcion de los cuidados que pense que podrian ser un poco mas largos "vegetal"-->
+            <a:planta xmlns:a="./plantaville.xml" >
+                <a:nombre denominacion="pino europeo" nom_tecnico="pinus europeus" nom_comun="Pino"></a:nombre>
+                <a:hoja tipo="perenne"></a:hoja>
+                <a:floracion tipo="otoñal"></a:floracion>
+                <a:frecuencia_riego dias="5"></a:frecuencia_riego>
+                <a:luz_solar cantidad="poca"></a:luz_solar>
+                <a:informacion_tecnica>
+                    <a:sustrato marca="purina" gama="media" cantidad="poca"></a:sustrato>
+                    <a:abono marca="libelula" gama="alta" cantidad="poco"></a:abono>
+                    <a:cuidados>Tener en un sitio calido con poca luz y indirecta</a:cuidados>
+                </a:informacion_tecnica>
+            </a:planta>
+        </p:sala>
+    </p:planta>
+
+<!-- Esta planta y las siguientes seran igual que la anterior-->
+    <p:planta  xmlns:p="./plantaville.xml" edificio="1">
+        <p:sala>
+            <a:planta  xmlns:a="./plantaville.xml">
+                <a:nombre denominacion="Castaño Salvaje" nom_tecnico="Epiterus Castañus" nom_comun="Castaño"></a:nombre>
+                <a:hoja tipo="Caduca"></a:hoja>
+                <a:floracion tipo="Veraniega"></a:floracion>
+                <a:frecuencia_riego dias="3"></a:frecuencia_riego>
+                <a:luz_solar cantidad="mucha"></a:luz_solar>
+                <a:informacion_tecnica>
+                    <a:sustrato marca="libelula" gama="alta" cantidad="mucha"></a:sustrato>
+                    <a:abono marca="H20" gama="media" cantidad="mucha"></a:abono>
+                    <a:cuidados>No dejar que jesus se acerque a los castaños </a:cuidados>
+                </a:informacion_tecnica>
+            </a:planta>
+        </p:sala>
+        <p:sala>
+            <a:planta  xmlns:a="./plantaville.xml">
+                <a:nombre denominacion="Roble Canadiense" nom_tecnico="Aerus roblus" nom_comun="Roble"></a:nombre>
+                <a:hoja tipo="Caduca"></a:hoja>
+                <a:floracion tipo="Primaveral"></a:floracion>
+                <a:frecuencia_riego dias="6"></a:frecuencia_riego>
+                <a:luz_solar cantidad="mucha"></a:luz_solar>
+                <a:informacion_tecnica>
+                    <a:sustrato marca="libelula" gama="baja" cantidad="poca"></a:sustrato>
+                    <a:abono marca="H20" gama="baja" cantidad="mucha"></a:abono>
+                    <a:cuidados>Luz constante y de vez en cuando sacudir para estrasar al árbol</a:cuidados>
+                </a:informacion_tecnica>
+            </a:planta>
+        </p:sala>
+    </p:planta>
+</plantas>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

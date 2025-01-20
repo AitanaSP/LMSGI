@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="horizontal-menu">
+        <img class="header-logo" src="./imagenes/Mercedes-Benz_Star_2022.svg.png" height="100px" width="100px"/>
+        <h1>Concesionario</h1>
+        <nav>
+            <ul>
+                <li><a href="#"></a> </li>
+
+                <li> <a target="_blank" rel="noopener norefener nofollow"
+                    href="./index.html"></a></li>
+            </ul>
+        </nav>
+    </header>
+        <img class="img-kirby" src="./imagenes/Kirby_Nintendo.png" height="50px" width="50px"/>
+    <h1>Formulario de Configuración de Vehículo</h1>
+    <form action="coches.php" method="post" id="001">
+
+        <fieldset class="ggg">
+            <legend>Configuración del Vehículo</legend>
+           
+
+            <label for="modelo">Modelo de coche:</label>
+            <select id="modelo" name="modelo" required>
+                <option value="" disabled selected>Elige un modelo...</option>
+                <option value="crossland">Crossland</option>
+                <option value="fiat_300">Fiat 300</option>
+                <option value="tesla">Tesla Cybertruck</option>
+
+            </select>
+           
+ 
+            <label for="motor">Tipo de motor:</label>
+            <select id="motor" name="motor" required>
+                <option value="" disabled selected>Elige un motor...</option>
+                <option value="gasolina">Gasolina</option>
+                <option value="diesel">Diésel</option>
+                <option value="electrico">Eléctrico</option>
+            </select>
+           
+
+            <label for="color">Color del vehículo:</label>
+            <input type="color" id="color" name="color">
+           
+
+            <label>Número de puertas:</label>
+            <input type="radio" id="puertas3" name="puertas" value="3" checked>
+            <label for="puertas3">3 puertas</label>
+            <input type="radio" id="puertas5" name="puertas" value="5">
+            <label for="puertas5">5 puertas</label><br>
+           
+
+            <label>Extras disponibles:</label>
+            <input type="checkbox" id="gps" name="extras" value="gps">
+            <label for="gps">GPS</label>
+            <input type="checkbox" id="aire" name="extras" value="aire">
+            <label for="aire">Aire acondicionado</label>
+            <input type="checkbox" id="camara" name="extras" value="camara">
+            <label for="camara">Cámara de reversa</label>
+            <input type="checkbox" id="sensor" name="extras" value="sensor">
+            <label for="sensor">Sensores de estacionamiento</label><br><br>
+
+           
+
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí tus comentarios..."></textarea>
+        </fieldset>
+ 
+
+        <fieldset class="datos">
+            <legend>Datos Personales</legend>
+           
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" size="10" required>
+           
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" size="20" required>
+           
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" size="30" required>
+           
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" pattern="\d{9}" title="Debe contener 9 dígitos" required>
+           
+            <label>Género:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+        </fieldset>
+ 
+
+        <div class="buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+    </form>
+</body>
+</html>
+ 
