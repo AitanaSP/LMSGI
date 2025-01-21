@@ -1,3 +1,5 @@
+
+/*Bodys de los HTML*/
 .bodyindex{
         width: 100%;
         height: 100%;
@@ -21,14 +23,20 @@
 .bodyportfolio{
     background-color: #67917a;
 }
+
+.bodyskills{
+
+}
+
+
+/*Menu Principal*/
+
 .archivador {
     position: relative;
     background-color: #ffffff;
     border: 1px solid #ccc;
-   /* width: 95%;
-    max-width: 1200px;*/
     width: auto;
-    max-width: 100%;
+    max-width: 95%;
     margin: 30px auto;
     border-radius: 10px;
     overflow: hidden;
@@ -36,7 +44,7 @@
 }
 
 .menu-principal {
-    display: flex; /* Mantener los botones en fila horizontal */
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: white;
@@ -52,7 +60,7 @@
     text-align: center;
     background-color: #67917a;
     padding: 15px 10px;
-    margin-right: 0px; /* Espacio entre los botones */
+    margin-right: 0px;
     border-radius: 10px 10px 0 0;
     border: 1px solid #ccc;
     border-bottom: none;
@@ -67,7 +75,7 @@
 }
 
 input[type="radio"] {
-    display: none; /* Ocultar los botones de radio */
+    display: none;
 }
 
 input[type="radio"]:checked + label {
@@ -84,18 +92,18 @@ input[type="radio"]:checked + label {
     background-color: #e6f4ff;
     border: 1px solid #67917a;
     border-radius: 0 0 10px 10px;
-    margin-top: 0px; /* Añadir espacio entre el botón y el contenido */
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
 input[type="radio"]:checked + label + .nav {
-    display: block; /* Mostrar el contenido cuando se selecciona el radio button */
+    display: block;
 }
 .container {
     position: relative;
     overflow: hidden;
     width: auto;
-    padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 100%;
     height: auto;
   }
 .contcarpeta{
@@ -106,62 +114,75 @@ input[type="radio"]:checked + label + .nav {
     right: 0;
     width: 100%;
     height: 100%;
-   /* height: 2000px;*/
-   /* width: 1500px;*/
 }
 
 .nom_introduccion{
     float: right;
 }
+
+/*Sobre Mi HTML*/
+h2{
+  font-size: 50px;
+  text-align: center;
+}
+
+table{
+  margin: 20px auto;
+  border-collapse: collapse; 
+  width: 100%;
+}
 .fotocurriculum{
-
-    width: 270px;
-    height: 400px;
-
-    
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;   
 }
 
 .textocurriculum{
-
+  width: 800px;
+  height: 450px;
     background-color: white;
     border-radius: 20px;
     border: 20px;
     color: #67917a;
-    padding-top: 50px;
+    font-size: 40px;
+    padding-top: 30px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-
+    align-content: center;
 }
 
-/*CARROUSEL*/
-
+hr{
+  width: 1600px;
+  border-color: #170409;
+}
 .contenedor {
-
+    justify-content: center;
     display: flex;
-    gap: 20px; /* Espaciado entre imágenes */
+    gap: 50px;
+
   }
   
   .item {
-    position: relative; /* Necesario para posicionar el texto */
+    position: relative;
     text-align: center;
   }
   
   .item img {
-    width: 350px;
-    height: 350px;
-    border-radius: 8px;
-    transition: transform 0.3s ease; /* Efecto de zoom al pasar el ratón */
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
   }
   
   .item img:hover {
-    transform: scale(1.1); /* Zoom */
+    transform: scale(1.1);
   }
   
-  /* Texto debajo de la imagen */
+
   .texto {
     position: absolute;
-    bottom: -25px; /* Aparece justo debajo de la imagen */
+    bottom: -25px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
@@ -169,11 +190,118 @@ input[type="radio"]:checked + label + .nav {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 30px;
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.3s ease; /* Transición suave */
-    pointer-events: none; /* Evita interferencias con el mouse */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
   }
   
   .item:hover .texto {
-    opacity: 1; /* Aparece al pasar el ratón */
+    opacity: 1;
   }
+
+
+/*FOOTER*/
+footer{
+    background-color:green;
+}
+
+/* From Uiverse.io by Smit-Prajapati */ 
+.orange {
+  color: #ff7a01;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #001925;
+  padding: 30px;
+  border-left: 5px solid #ff7a01;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: #ff7a01;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #ff7a01;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #ff7a01;
+  color: #ff7a01;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #ff7a01);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #ff7a01;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ff7a01;
+  color: #001925;
+}
