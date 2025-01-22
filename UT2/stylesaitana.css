@@ -204,104 +204,139 @@ hr{
 footer{
     background-color:green;
 }
+/*Redes sociales*/
 
-/* From Uiverse.io by Smit-Prajapati */ 
-.orange {
-  color: #ff7a01;
-}
-
-.form-container {
-  max-width: 700px;
-  margin: 30px;
-  background-color: #001925;
-  padding: 30px;
-  border-left: 5px solid #ff7a01;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-}
-
-.heading {
-  display: block;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.form-container .form .input {
-  color: #87a4b6;
-  width: 100%;
-  background-color: #002733;
-  border: none;
-  outline: none;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-  border-left: 1px solid transparent;
-}
-
-.form-container .form .input:focus {
-  border-left: 5px solid #ff7a01;
-}
-
-.form-container .form .textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  outline: none;
-  background-color: #013747;
-  color: #ff7a01;
-  font-weight: bold;
-  resize: none;
-  max-height: 150px;
-  margin-bottom: 20px;
-  border-left: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
-}
-
-.form-container .form .textarea:focus {
-  border-left: 5px solid #ff7a01;
-}
-
-.form-container .form .button-container {
+.social-card {
+  height: fit-content;
+  width: fit-content;
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgb(255, 255, 255);
+  padding: 20px 25px;
+  border-radius: 14px;
 }
-
-.form-container .form .button-container .send-button {
-  flex-basis: 70%;
-  background: #ff7a01;
-  padding: 10px;
-  color: #001925;
-  text-align: center;
-  font-weight: bold;
-  border: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
-}
-
-.form-container .form .button-container .send-button:hover {
-  background: transparent;
-  border: 1px solid #ff7a01;
-  color: #ff7a01;
-}
-
-.form-container .form .button-container .reset-button-container {
-  filter: drop-shadow(1px 1px 0px #ff7a01);
-  flex-basis: 30%;
-}
-
-.form-container .form .button-container .reset-button-container .reset-button {
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
   position: relative;
-  text-align: center;
-  padding: 10px;
-  color: #ff7a01;
-  font-weight: bold;
-  background: #001925;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
-  transition: all 0.2s ease-in-out;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.form-container .form .button-container .reset-button-container .reset-button:hover {
-  background: #ff7a01;
-  color: #001925;
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+  z-index: 2;
 }
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: 1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px;
+}
+.github .BG {
+  background: #181818;
+}
+.linkdin .BG {
+  background: #0077b5;
+}
+.whatsapp .BG {
+  background: #075e54;
+}
+.discord .BG {
+  background: #7289da;
+}
+.Btn:hover .BG {
+  transform: scale(1.5);
+  /* transform-origin: bottom; */
+  font-size: 20px;
+  color: white;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(209, 209, 209, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+/*Formulario*/
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+    
