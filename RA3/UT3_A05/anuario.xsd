@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!--Elemento RAIZ-->
+    <xs:element name="Anuario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Articulo" minOccurs="0" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+			<!--Atributos fuera de la secuencia y dentro de la parte compleja-->
+			<xs:attribute name="año" type="xs:gYear" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--Defino el elemento <articulo> referenciado antes-->
+    <xs:element name="Articulo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Titulo" type="TextLongMax100"></xs:element> <!--tipo simple propio-->
+                <xs:element name="Fecha" type="xs:date"></xs:element> 
+                <xs:element name="NumLectores" type="EntPosMin10"></xs:element> <!--tipo simple propio-->
+                <xs:element ref="Autores" minOccurs="0"></xs:element>
+            </xs:sequence>
+            <!--Atributos fuera de la secuencia y dentro de la parte compleja-->
+            <xs:attribute name="identificador" type="TipoIdent" use="required"></xs:attribute> <!--tipo simple propio-->
+        </xs:complexType>
+    </xs:element>
+
+    <!--Defino el elemento <autores> referenciado antes-->
+    <xs:element name="Autores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Autor" maxOccurs="3">
+					<xs:complexType>
+						<xs:attribute name="nombre" type="TextLongMax100" use="required"></xs:attribute> <!--tipo simple propio-->
+						<xs:attribute name="mail" type="TextLongMax100" use="required"></xs:attribute> <!--tipo simple propio-->
+					</xs:complexType>
+				</xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--TIPOS SIMPLES PROPIOS-->
+    <!--String de longitud máxima 10 caracteres-->
+    <xs:simpleType name="TextLongMax100"> 
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="100"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <!---Numero entero positivo mayor que 10-->
+    <xs:simpleType name="EntPosMin10">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="10"></xs:minInclusive>
+		</xs:restriction>
+    </xs:simpleType>
+    <!---Letra mayúscula seguida de un guión y 4 cifras-->
+	<xs:simpleType name="TipoIdent">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{1}-[0-9]{4}"></xs:pattern>
+		</xs:restriction>	
+   </xs:simpleType>
+    
+</xs:schema>

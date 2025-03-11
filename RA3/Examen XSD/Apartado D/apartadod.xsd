@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                <xs:element name="personajes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="personaje" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="caracteristicas_fisicas">
+                                            <xs:complexType>
+                                                <xs:attribute name="altura" type="xs:integer"
+                                                    use="required" />
+                                                <xs:attribute name="peso" type="xs:integer"
+                                                    use="required" />
+                                                <xs:attribute name="color_pelo" use="required" />
+                                                <xs:attribute name="color_piel" use="required" />
+                                                <xs:attribute name="color_ojos" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="planeta">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="datos_fisicos">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="superficie">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="terreno"
+                                                                            use="required" />
+                                                                        <xs:attribute name="agua"
+                                                                            type="xs:integer"
+                                                                            use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="periodo_rotacion"
+                                                                type="xs:integer" use="required" />
+                                                            <xs:attribute name="periodo_orbital"
+                                                                type="xs:integer" use="required" />
+                                                            <xs:attribute name="diametro"
+                                                                type="xs:integer" use="required" />
+                                                            <xs:attribute name="clima"
+                                                                use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:integer"
+                                                    use="required" />
+                                                <xs:attribute name="nombre" use="required" />
+                                                <xs:attribute name="poblacion" use="required" />
+                                                <xs:attribute name="idioma" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" use="required" />
+                                    <xs:attribute name="nombre" use="required" />
+                                    <xs:attribute name="anno_nacimiento" use="required" />
+                                    <xs:attribute name="genero" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            
+        
+    
+</xs:schema>
