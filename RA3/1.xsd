@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <!-- Esto es obligatorio de hacer-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"><!-- Este define la estrcutura del fichero-->
+
+<xs:element name="note"> <!-- Element define un elemento que hay en el otro documento-->
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="to" type="xs:string"/>
+      <xs:element name="from" type="xs:string"/>
+      <xs:element name="heading" type="xs:string"/>
+      <xs:element name="body" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema> 
+
+<!--Poyo-->
