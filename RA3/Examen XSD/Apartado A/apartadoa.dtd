@@ -1,0 +1,44 @@
+<!ELEMENT personajes (personaje+)>
+
+    <!ELEMENT personaje (caracteristicas_fisicas, planeta+)>
+
+        <!ELEMENT caracteristicas_fisicas (#PCDATA)>
+        <!ELEMENT planeta (datos_fisicos+)>
+            <!ELEMENT datos_fisicos (superficie+)>
+                <!ELEMENT superficie (#PCDATA)>
+
+
+<!ATTLIST personaje 
+
+    id CDATA #REQUIRED
+    nombre CDATA #REQUIRED
+    anno_nacimiento CDATA #REQUIRED
+    genero CDATA #REQUIRED>
+
+
+<!ATTLIST caracteristicas_fisicas 
+
+    altura CDATA #REQUIRED
+    peso CDATA #REQUIRED
+    color_pelo CDATA #REQUIRED
+    color_piel CDATA #REQUIRED
+    color_ojos CDATA #REQUIRED>
+
+<!ATTLIST planeta 
+
+    id CDATA #REQUIRED
+    nombre CDATA #REQUIRED
+    poblacion CDATA #REQUIRED
+    idioma CDATA #REQUIRED>
+
+<!ATTLIST datos_fisicos
+
+    periodo_rotacion CDATA #REQUIRED
+    periodo_orbital CDATA #REQUIRED
+    diametro CDATA #REQUIRED
+    clima CDATA #REQUIRED>
+
+<!ATTLIST superficie 
+
+    terreno CDATA #REQUIRED
+    agua CDATA #REQUIRED>

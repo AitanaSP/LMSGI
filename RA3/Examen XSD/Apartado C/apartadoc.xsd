@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="personajes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personaje" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="caracteristicas_fisicas">
+                                <xs:complexType>
+                                    <xs:attribute name="altura"/>
+                                    <xs:attribute name="peso"/>
+                                    <xs:attribute name="color_pelo"/>
+                                    <xs:attribute name="color_piel"/>
+                                    <xs:attribute name="color_ojos"/>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="planeta">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="datos_fisicos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="superficie">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="terreno"
+                                                            />
+                                                            <xs:attribute name="agua"
+                                                            />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="periodo_rotacion"
+                                                />
+                                                <xs:attribute name="periodo_orbital"
+                                                />
+                                                <xs:attribute name="diametro"
+                                                />
+                                                <xs:attribute name="clima"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id"/>
+                                    <xs:attribute name="nombre"/>
+                                    <xs:attribute name="poblacion"/>
+                                    <xs:attribute name="idioma"/>
+                                </xs:complexType>
+                            </xs:element>
+
+                            
+                        </xs:sequence>
+                        <xs:attribute name="id"/>
+                        <xs:attribute name="nombre"/>
+                        <xs:attribute name="anno_nacimiento"/>
+                        <xs:attribute name="genero"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

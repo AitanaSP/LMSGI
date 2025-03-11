@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE personajes SYSTEM "apartadoa.dtd">
+
+
+
+<!-- Personaje es una etiqueta que guarda información sobre cada personaje de la saga Star Wars. 
+        id: identificador único del personaje. Es un número entero de 3 cifras  y dos letras mayúsculas separados por un guión. 
+        nombre: nombre del personaje
+        anno_nacimiento: año de nacimiento del personaje. Está formado por hasta 3 cifras y las letras BBY (Before Battle of Yavin).
+        genero: género del personaje
+        Caracteristicas_fisicas es una etiqueta que guarda información sobre las características físicas del personaje.
+            altura: altura del personaje. Es un número entero en centímetros.
+            peso: peso del personaje. Es un número entero en kilogramos.
+            color_pelo: color del pelo del personaje. 
+            color_piel: color de la piel del personaje. 
+            color_ojos: color de los ojos del personaje.
+        Planeta es una etiqueta que guarda información sobre el planeta natal del personaje.
+            id: identificador único del planeta. Es un número entero de 4 cifras.
+            nombre: nombre del planeta.
+            poblacion: población del planeta. Es un número entero.
+            idioma: idioma principal del planeta.
+            Datos_fisicos es una etiqueta que guarda información sobre las características físicas del planeta.
+                periodo_rotacion: periodo de rotación del planeta. Es un número entero en horas.
+                periodo_orbital: periodo orbital del planeta. Es un número entero en días.
+                diametro: diámetro del planeta. Es un número entero en kilómetros.
+                clima: clima del planeta.
+                Superficie es una etiqueta que guarda información sobre la superficie del planeta.
+                    terreno: tipo de terreno del planeta.
+                    agua: porcentaje de agua en la superficie del planeta. Es un número entero en porcentaje.
+-->
+<personajes>
+    <personaje id="001-PF" nombre="Luke Skywalker" anno_nacimiento="19BBY" genero="masculino">
+        <caracteristicas_fisicas altura="172" peso="77" color_pelo="rubio" color_piel="clara" color_ojos="azul"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>    
+    <personaje id="002-RP" nombre="C-3PO" anno_nacimiento="112BBY" genero="n/a">
+        <caracteristicas_fisicas altura="167" peso="75" color_pelo="n/a" color_piel="dorado" color_ojos="amarillo"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="003-RA" nombre="R2-D2" anno_nacimiento="33BBY" genero="n/a">
+        <caracteristicas_fisicas altura="96" peso="32" color_pelo="n/a" color_piel="blanco, azul" color_ojos="rojo"/>
+        <planeta id="0008" nombre="Naboo" poblacion="4500000000" idioma="gungans, galactico básico">
+            <datos_fisicos periodo_rotacion="26" periodo_orbital="312" diametro="12120" clima="temperate">
+                <superficie terreno="colinas" agua="12"/>
+            </datos_fisicos>
+        </planeta>
+
+    </personaje>
+    <personaje id="004-PF" nombre="Darth Vader" anno_nacimiento="419BBY" genero="masculino">
+        <caracteristicas_fisicas altura="202" peso="136" color_pelo="ninguno" color_piel="blanca" color_ojos="amarillo"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="005-PF" nombre="Leia Organa" anno_nacimiento="19BBY" genero="femenino">
+        <caracteristicas_fisicas altura="150" peso="49" color_pelo="marrón" color_piel="clara" color_ojos="marrón"/>
+        <planeta id="2" nombre="Alderaan" poblacion="2000000000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="24" periodo_orbital="364" diametro="12500" clima="templado">
+                <superficie terreno="campos montañosos" agua="40"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+    <personaje id="006-PF" nombre="Owen Lars" anno_nacimiento="52BBY" genero="masculino">
+        <caracteristicas_fisicas altura="178" peso="120" color_pelo="marrón, gris" color_piel="clara" color_ojos="azul"/>
+        <planeta id="0001" nombre="Tatooine" poblacion="200000" idioma="galactico básico">
+            <datos_fisicos periodo_rotacion="23" periodo_orbital="304" diametro="10465" clima="árido">
+                <superficie terreno="desértico" agua="1"/>
+            </datos_fisicos>
+        </planeta>
+    </personaje>
+</personajes>
